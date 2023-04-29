@@ -12,6 +12,7 @@ type GameState = {
 
 type MultipleChoiceQuestion = {
     index: number,
+    casestudyText?: string
     questionText: string,
     answers: string[]
     correctAnswer: number,

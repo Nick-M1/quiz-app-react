@@ -1,29 +1,7 @@
-import {MULTIPLE_CHOICE_QUESTIONS_LENGTH} from "../questions/multiple-choice-questions";
-import {range, shuffle} from "./array-utils";
 import {
-    LOCALSTORAGE_MULTIPLECHOICEQUIZ_GAMESTATE, LOCALSTORAGE_MULTIPLECHOICEQUIZ_PREVANSWERS,
-    LOCALSTORAGE_MULTIPLECHOICEQUIZ_QUESTIONS
+    LOCALSTORAGE_MULTIPLECHOICEQUIZ_GAMESTATE, LOCALSTORAGE_MULTIPLECHOICEQUIZ_PREVANSWERS
 } from "../constants/localstorage-constants";
-import {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS} from "../constants/game-constants";
 
-export function startMultipleChoiceQuiz() {
-    // QUESTIONS LOCALSTORAGE
-    const shuffledQuestions = shuffle(range(MULTIPLE_CHOICE_QUESTIONS_LENGTH)).slice(0, MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS)
-    localStorage.setItem(LOCALSTORAGE_MULTIPLECHOICEQUIZ_QUESTIONS, JSON.stringify(shuffledQuestions))
-
-    // GAMESTATE LOCALSTORAGE
-    const initalGamestate: GameState = {
-        currentQuestionIndex: 0,
-        userAnswer: null,
-        score: 0,
-        timer: 0
-    }
-
-    localStorage.setItem(LOCALSTORAGE_MULTIPLECHOICEQUIZ_GAMESTATE, JSON.stringify(initalGamestate))
-
-    // ANSWERS LOCALSTORAGE
-    localStorage.setItem(LOCALSTORAGE_MULTIPLECHOICEQUIZ_PREVANSWERS, JSON.stringify([]))
-}
 
 export function getPreviousAnswers() {
     const prevAnswersStorage = localStorage.getItem(LOCALSTORAGE_MULTIPLECHOICEQUIZ_PREVANSWERS)

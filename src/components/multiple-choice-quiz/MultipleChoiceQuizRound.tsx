@@ -1,14 +1,15 @@
-import {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS} from "../../constants/game-constants";
+import {TOTAL_NUMBER_OF_QUESTIONS} from "../../constants/game-constants";
 import QuestionCard from "../QuestionCard";
 import {MULTIPLE_CHOICE_QUESTIONS} from "../../questions/multiple-choice-questions";
 import useMultipleChoiceGamestate from "../../hooks/use-multiple-choice-gamestate";
 
 type Props = {
-    questions: number[]
+    questions: MultipleChoiceQuestion[]
+    questionsIndexes: number[]
     gamestateHook: Exclude<ReturnType<typeof useMultipleChoiceGamestate>, null>
 }
 
-export default function MultipleChoiceQuizRound({ questions, gamestateHook }: Props) {
+export default function MultipleChoiceQuizRound({ questions, questionsIndexes, gamestateHook }: Props) {
     const [
         gamestate,
         nextButtonDisabled,
@@ -22,10 +23,10 @@ export default function MultipleChoiceQuizRound({ questions, gamestateHook }: Pr
         <div className='text-white text-center md:px-12 lg:px-32'>
             <p className='p-4 font-bold text-xl'>Score: {gamestate.score}</p>
             <p className='text-[#9F50AC] font-bold pb-2 text-[14px]'>
-                Question {gamestate.currentQuestionIndex + 1} out of {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS}
+                Question {gamestate.currentQuestionIndex + 1} out of {TOTAL_NUMBER_OF_QUESTIONS}
             </p>
             <QuestionCard
-                question={MULTIPLE_CHOICE_QUESTIONS[questions[gamestate.currentQuestionIndex]]}
+                question={questions[questionsIndexes[gamestate.currentQuestionIndex]]}
                 userAnswer={gamestate.userAnswer}
                 onClick={answerOnclickHandler}
             />

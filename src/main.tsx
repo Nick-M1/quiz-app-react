@@ -10,7 +10,7 @@ const router = createBrowserRouter(
         <Route element={<Layout/>} errorElement={<ErrorPage/>}>
             <Route index lazy={() => import("./routes/HomePageRoute")} />
             <Route path='/create-account' lazy={() => import("./routes/CreateAccountRoute")} />
-            <Route path='/multiple-choice-quiz' lazy={() => import("./routes/MultipleChoiceQuizRoute")} />
+            <Route path='/quiz/:quizType' lazy={() => import("./routes/MultipleChoiceQuizRoute")} />
         </Route>
     )
 )

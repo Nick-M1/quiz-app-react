@@ -1,4 +1,4 @@
-import {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS} from "../../constants/game-constants";
+import {TOTAL_NUMBER_OF_QUESTIONS} from "../../constants/game-constants";
 import {GAMEOVER_GIF} from "../../constants/assets-constants";
 import {Link} from "react-router-dom";
 
@@ -9,11 +9,11 @@ type Props = {
 
 export default function MultipleChoiceQuizFinished({ gamestate, previousQuestionHandler }: Props) {
     return (
-        <div className='text-white text-center'>
+        <div className='text-white text-center md:px-12 lg:px-32'>
             <h3 className='p-6 font-bold text-3xl'>Quiz Finished</h3>
             <p className='p-4 font-bold text-xl'>Final Score: {gamestate.score}</p>
             <p className='text-[#9F50AC] font-bold pb-2 text-[14px]'>
-                Total number of questions: {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS}
+                Total number of questions: {TOTAL_NUMBER_OF_QUESTIONS}
             </p>
 
             <img src={GAMEOVER_GIF} alt='quiz-over' title='Quiz Finished - Welldone!!' className='mx-auto max-w-sm max-h-[31.7dvh]'/>
