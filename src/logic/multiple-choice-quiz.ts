@@ -4,10 +4,11 @@ import {
     LOCALSTORAGE_MULTIPLECHOICEQUIZ_GAMESTATE, LOCALSTORAGE_MULTIPLECHOICEQUIZ_PREVANSWERS,
     LOCALSTORAGE_MULTIPLECHOICEQUIZ_QUESTIONS
 } from "../constants/localstorage-constants";
+import {MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS} from "../constants/game-constants";
 
 export function startMultipleChoiceQuiz() {
     // QUESTIONS LOCALSTORAGE
-    const shuffledQuestions = shuffle(range(MULTIPLE_CHOICE_QUESTIONS_LENGTH))
+    const shuffledQuestions = shuffle(range(MULTIPLE_CHOICE_QUESTIONS_LENGTH)).slice(0, MULTIPLECHOICEQUIZ_NUMBER_OF_QUESTIONS)
     localStorage.setItem(LOCALSTORAGE_MULTIPLECHOICEQUIZ_QUESTIONS, JSON.stringify(shuffledQuestions))
 
     // GAMESTATE LOCALSTORAGE

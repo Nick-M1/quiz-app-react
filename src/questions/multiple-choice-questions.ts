@@ -106,6 +106,181 @@ export const MULTIPLE_CHOICE_QUESTIONS: MultipleChoiceQuestion[] = [
         correctAnswer: 1,
         difficulty: Difficulty.MEDIUM
     },
+    {
+        index: 16,
+        questionText: 'The seventeenth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 17,
+        questionText: 'The eighteenth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 18,
+        questionText: 'The nineteenth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 19,
+        questionText: 'The twentheeth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 20,
+        questionText: 'The twenty-first question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 21,
+        questionText: 'The twenty-second question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 22,
+        questionText: 'The twenty-third question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 23,
+        questionText: 'The twenty-forth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 24,
+        questionText: 'The twenty-fith question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 25,
+        questionText: 'The twenty-sixth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 26,
+        questionText: 'The twenty-seventh question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 27,
+        questionText: 'The twenty-eighth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 28,
+        questionText: 'The twenty-nineth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 29,
+        questionText: 'The thirtyth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 30,
+        questionText: 'The thirty-first question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 31,
+        questionText: 'The thirty-second question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 32,
+        questionText: 'The thirty-third question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 33,
+        questionText: 'The thirty-forth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 34,
+        questionText: 'The thirty-fivth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 35,
+        questionText: 'The thirty-sixth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 36,
+        questionText: 'The thirty-seventh question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 37,
+        questionText: 'The thirty-eighth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 38,
+        questionText: 'The thirty-nineth question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 39,
+        questionText: 'The fortith question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
+    {
+        index: 40,
+        questionText: 'The forti-first question - answer is 1',
+        answers: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'],
+        correctAnswer: 1,
+        difficulty: Difficulty.MEDIUM
+    },
 ]
 
 export const MULTIPLE_CHOICE_QUESTIONS_LENGTH = MULTIPLE_CHOICE_QUESTIONS.length
